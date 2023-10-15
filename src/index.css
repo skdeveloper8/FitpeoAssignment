@@ -1,12 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* *{
-  background-color: red-50;
-} */
-/* .main-Sidebar{
-  display: block;
-} */
+
 
 .click-btn
 {
@@ -181,9 +176,7 @@
 
 /* .................................................. */
 .mainCard{
-  /* margin-right: 230px; */
   overflow-x: hidden;
-  /* z-index: -1; */
 }
 .graph{
   display: flex;
@@ -219,17 +212,11 @@
   width:36vh;
 
 }
-/* .jugad
-{
-  display: none;
-} */
 
 }
 
 @media only screen and ((min-width:700px) and (max-width:1180px)){
-  .main-Sidebar{
-    /* display: none; */
-  }
+  
   .mainCard{
     width: 100vw;
   }
@@ -239,7 +226,6 @@
     background-color: rgb(194, 211, 228);
     margin: 5px;
     border-radius: 5px;
-    /* background-color: red; */
     bottom: 23px;
   }
   .month {
@@ -275,14 +261,10 @@
 }
 
 
-/* ............................................. */
-
-
 /* ----------------------------------media querry- mobile view--------------------------------- */
 
 @media only screen and (max-width:600px) {
   .main-Sidebar {
-    /* display: none; */
     background-color: transparent;
     z-index: 1;
     color: white;
@@ -325,12 +307,6 @@
 
   }
 
-  /* .love {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-  } */
 
   .cards {
     margin-top: 20px;
@@ -405,7 +381,6 @@
 
     overflow-x: hidden;
     padding-left: 10px;
-    /* background-color: red; */
   }
 
   .sub-main-overview {
@@ -509,9 +484,6 @@
 @media only screen and (max-width:368px){
 
   .card-search-icon{
-    /* margin-left: 20px; */
-   
-    /* background-color: red; */
     width: 35%;
 
   }
@@ -524,7 +496,6 @@
 
 
   .month {
-    /* background-color: red; */
     margin: 5px;
     font-size: 0.55rem;
     margin-top: 9rem;
@@ -539,7 +510,6 @@
   .Product-stock {
     width: fit-content;
     display: flex;
-    /* justify-content: flex-end; */
     margin-right: 0px;
     gap: 10px;
     padding-left: 65px;
