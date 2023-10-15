@@ -1,0 +1,560 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* *{
+  background-color: red-50;
+} */
+/* .main-Sidebar{
+  display: block;
+} */
+
+.click-btn
+{
+  display: none;
+}
+.Side-Button
+{
+  position: absolute;
+  right: 10px;
+}
+
+.dashboard {
+
+  display: flex;
+  font-size: larger;
+  font-weight: 600;
+  height: 80vh;
+  margin-top: 2rem;
+  margin-left: 1.7rem;
+  cursor: pointer;
+}
+
+.dashboard>ul>li {
+  margin-top: 0.8rem;
+  border-radius: 3px;
+  width: 10rem;
+  height: 2rem;
+  padding-top: 0.2rem;
+}
+
+.dashboard>ul>li:hover {
+  background-color: blueviolet;
+}
+
+.manager {
+  margin: auto;
+  margin-bottom: 10px;
+
+  display: flex;
+  bottom: 0px;
+  background-color: rgb(99, 106, 199);
+  width: 12rem;
+
+  border-radius: 3px;
+}
+
+.pic {
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.project {
+  display: flex;
+  font-weight: 300;
+}
+
+.reacticon {
+  /* margin-top: 6px; */
+  margin: 6px;
+}
+
+/* ..................Bar */
+.bars {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+
+}
+
+.bar:hover {
+  background-color: aqua;
+}
+
+.bar {
+  position: absolute;
+  width: 45px;
+  background-color: rgb(194, 211, 228);
+  margin: 15px;
+  border-radius: 5px;
+  bottom: 23px;
+}
+
+.main {
+
+  height: 240px;
+  width: 55vw;
+  background-color: white;
+  border-radius: 5px;
+
+}
+
+.quant {
+  margin-left: 560px;
+  margin-top: -35px;
+}
+
+.quant2 {
+  margin-left: 630px;
+  margin-top: -18px;
+}
+.card {
+  /* width: 240px; */
+  width: 100vw;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  gap: 2rem;
+  border-radius: 5px;
+
+}
+
+.cards {
+  width: 76vw;
+  height: 100px;
+  display: flex;
+  gap: 2rem;
+}
+
+.cardIcon {
+  margin: auto;
+  margin-left: 10px;
+  height: 75px;
+  width: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 30px;
+}
+
+.carddata {
+  margin-left: -30px;
+  padding: 1px;
+
+
+}
+
+.month {
+
+  margin: 1rem;
+  margin-top: 9.5rem;
+}
+
+.sales {
+  /* flex  mr-[3.2rem] gap-11' */
+  display: flex;
+  margin-right: 3.2rem;
+  gap: 6rem;
+
+}
+
+.Product-stock {
+  display: flex;
+  margin-right: 90px;
+  gap: 6rem;
+}
+
+.Product-image {
+
+  width: 100px;
+  margin-right: 20px;
+  border-radius: 5px;
+  height: 60px;
+}
+
+
+/* .................................................. */
+.mainCard{
+  /* margin-right: 230px; */
+  overflow-x: hidden;
+  /* z-index: -1; */
+}
+.graph{
+  display: flex;
+  gap: 1.4rem;
+}
+
+.Customers{
+  background: white;
+  height:40vh;
+  width:45vh;
+  padding-left: 2rem;
+  border-radius: 7px;
+}
+.Productpage{
+  background-color: white;
+  width: 78.2vw;
+  margin-top: 5px;
+}
+.products{
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+.heading-card{
+  margin-right: 10px;
+}
+
+@media only screen and ((min-width:1180px)and (max-width:1300px)){
+
+.Customers{
+  
+  height:32vh;
+  width:36vh;
+
+}
+/* .jugad
+{
+  display: none;
+} */
+
+}
+
+@media only screen and ((min-width:700px) and (max-width:1180px)){
+  .main-Sidebar{
+    /* display: none; */
+  }
+  .mainCard{
+    width: 100vw;
+  }
+  .bar {
+    position: absolute;
+    width: 30px;
+    background-color: rgb(194, 211, 228);
+    margin: 5px;
+    border-radius: 5px;
+    /* background-color: red; */
+    bottom: 23px;
+  }
+  .month {
+
+    margin: 0.7rem;
+    margin-top: 9.5rem;
+  }
+  .bars{
+    padding: 0 45px;
+  }
+  .Customers{
+    background: rgb(255, 255, 255);
+    height:32vh;
+    width:20vw;
+    margin-right: 100px;
+    padding-left: 2rem;
+    border-radius: 7px;
+  }
+  .cards {
+    width: 77vw;
+    
+  }
+  .click-btn
+  {
+    display: block;
+  }
+  .jugad
+  {
+    display: none;
+  }
+  
+  
+}
+
+
+/* ............................................. */
+
+
+/* ----------------------------------media querry- mobile view--------------------------------- */
+
+@media only screen and (max-width:600px) {
+  .main-Sidebar {
+    /* display: none; */
+    background-color: transparent;
+    z-index: 1;
+    color: white;
+  }
+  .click-btn
+  {
+    display: block;
+  }
+  .cont-2
+  {
+    position: fixed;
+  }
+
+  .heading-card {
+    width: 100vw;
+    margin-top: -30px;
+  }
+
+  .card-search-icon {
+    margin-left: 30px;
+    margin-right: 48px;
+
+  }
+
+  .App {
+    width: 100vw;
+    overflow: hidden;
+    
+   
+  }
+
+  .mainCard {
+    background-color: rgb(170, 168, 168);
+    margin-left: -230px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1000px;
+    
+
+  }
+
+  /* .love {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+  } */
+
+  .cards {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-right: 30px;
+  
+    flex-wrap: wrap;
+  }
+
+  .card {
+    margin-right: 25px;
+    width: 15rem;
+    height: 20vh;
+
+  }
+
+
+  .overview {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+    height: fit-content;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+  }
+
+  .bars {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+    cursor: pointer;
+
+  }
+
+  .bar {
+    position: absolute;
+    width: 15px;
+    background-color: rgb(194, 211, 228);
+    margin: 0px;
+    border-radius: 5px;
+    bottom: 23px;
+  }
+
+  .month {
+    margin: 5px;
+    font-size: 0.6rem;
+    margin-top: 9rem;
+
+  }
+
+  .Quants {
+    display: flex;
+    padding: 10px;
+  }
+
+  .main {
+    width: 90vw;
+    margin-left: -2rem;
+    margin-right: 0.8rem;
+
+    overflow-x: hidden;
+    padding-left: 10px;
+    /* background-color: red; */
+  }
+
+  .sub-main-overview {
+    display: flex;
+    padding-left: 0;
+    justify-content: space-between;
+  }
+
+  .quant {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  .quant2 {
+    margin-left: 0px;
+    margin-top: 5px;
+  }
+
+  .Customers {
+    width: 15rem;
+    height: 15rem;
+    background-color: white;
+    /* margin: auto; */
+    margin-left: 35px;
+    margin-bottom: 3rem;
+   
+  }
+  
+  .graph {
+    display: flex;
+    
+    flex-wrap: wrap;
+  }
+
+  .Productpage {
+    background-color: white;
+    margin: auto;
+    width: 95vw;
+    padding-right: 1.2rem;
+    padding-top: 1.2rem;
+    margin-left: -10px;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+  }
+
+  .products {
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .sales {
+    display: flex;
+    width: fit-content;
+    margin-right: -0.75rem;
+    gap: 20px;
+    padding-left: 20px;
+  }
+
+  .Product-about {
+    font-size: .6rem;
+  }
+
+  .Product-Title {
+    font-size: .9rem;
+    width: fit-content;
+    font-weight: 200;
+  }
+
+  .Product-stock {
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0px;
+    gap: 15px;
+    padding-left: 40px;
+   
+  }
+  .product-na{
+    display: flex;
+    /* background-color: red; */
+    gap: 4rem;
+  }
+
+  .Product-image {
+    width: 3.5rem;
+    margin-right: 20px;
+    border-radius: 5px;
+    height: 4rem;
+  }
+  .inputSearch{
+    display: none;
+  }
+  .jugad
+  {
+    display: none;
+  }
+}
+/* .....................iphone5................... */
+@media only screen and (max-width:368px){
+
+  .card-search-icon{
+    /* margin-left: 20px; */
+   
+    /* background-color: red; */
+    width: 35%;
+
+  }
+
+  .click-btn
+  {
+    
+    display: block;
+  }
+
+
+  .month {
+    /* background-color: red; */
+    margin: 5px;
+    font-size: 0.55rem;
+    margin-top: 9rem;
+
+  }
+  .Customers {
+   
+    margin-left: 15px;
+   
+   
+  }
+  .Product-stock {
+    width: fit-content;
+    display: flex;
+    /* justify-content: flex-end; */
+    margin-right: 0px;
+    gap: 10px;
+    padding-left: 65px;
+   
+  }
+  .Product-about,.Product-Title{
+    width:4rem;
+    padding-right: 10px;
+    margin-left: -10px;
+  }
+  .jugad
+  {
+    display: none;
+  }
+ 
+
+
+}
