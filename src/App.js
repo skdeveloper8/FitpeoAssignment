@@ -14,7 +14,7 @@ function App() {
   const [cross, setCross] = useState(true);
   const [styleking, setstyle] = useState(null);
   function clickHandler() {
-    // setButton(true);
+  
 
     if (button) {
       setButton(false);
@@ -24,7 +24,7 @@ function App() {
       setButton(true);
       setstyle('none');
     }
-    // setCross(true);
+   
   }
   function crossHandler() {
     setCross(true);
@@ -65,15 +65,6 @@ function App() {
       <div>
 
       </div>
-
-      {/* <Graph/> */}
-      {/* <Overview /> */}
-
-
-
-
-
-
 
 
     </div>
